@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Pretendard-Regular';
+    padding-left: 320px;
+    padding-right:320px;
+}
+
+header{
+    padding-top: 68px;
+}
+
+header > p{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    padding-bottom: 20px;
+}
+
+header p:nth-child(2){
+    padding-bottom: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.subscribeBox{
+    border-radius: 30px;
+    background-color: #263140;
+    padding: 51px 58px 51px 58px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribeText h3{
+    font-width: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color:white;
+}
+
+.subscribeText div{
+    padding-top:18px;
+    font-width: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color:white;
+}
+
+main img{
+    width:1920px;
+    height:340px;
+    margin-left: -320px
+}
+
+
+.subscribeBox img{
+    width:24px;
+    height:24px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+}
+
+
+#email{
+    border-radius: 60px;
+    background-color: white;
+    color:#767676;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding:20px 278px 20px 68px;
+}
+
+form button{
+    padding:15px 29px 15px 29px;
+    background-color: #D97652;
+    border-radius: 40px;
+    color:white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    border:none
+}
