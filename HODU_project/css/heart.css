@@ -1,0 +1,37 @@
+.heart {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    animation: moveUp 2s linear forwards;
+
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    left: -50%;
+}
+
+.heart:after {
+    top: -50%;
+}
+
+@keyframes moveUp {
+    0% {
+        transform:rotate(45deg) translateY(500px); /* 시작할 때 */
+        opacity: 1;
+    }
+    100% {
+        transform:rotate(45deg) translateY(-500px); /* 끝날 때 */
+        opacity: 0;
+    }
+}

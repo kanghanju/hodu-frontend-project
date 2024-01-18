@@ -8,6 +8,7 @@
     <title>HODU_Project</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/heart.css">
 </head>
 <body>
 <section class="firstPage">
@@ -77,8 +78,8 @@
     </div>
 
     <!-- 지도를 표시할 div 입니다 -->
-    <div id="map" style="width:100%;height:350px;"></div>
-    <!--    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	eb5009ad4433a76b8e9a30403a72d29e"></script>-->
+    <div id="map" style="width:100%;height:350px;z-index: -1"></div>
+<!--        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	eb5009ad4433a76b8e9a30403a72d29e"></script>-->
 <!--        <script type="text/javascript" src="js/kakaoMap.js"></script>-->
 
     <div class="subscribe_box">
@@ -90,23 +91,39 @@
             </div>
         </div>
         <div class="subscribe_input">
-            <label for="email"><img src="images/mail.png" alt=""></label>
-            <input id="email" type="email" placeholder="Enter your email address">
-            <button class="orange_Btn">Subscribe</button>
+            <img src="images/mail.png" alt="">
+            <form>
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="Enter your email address"  required>
+                <button class="orange_Btn">Subscribe</button>
+            </form>
         </div>
     </div>
-    <img class="cat" src="images/img_5.png" alt="">
+    <div class="cat"><img src="images/img_5.png" alt=""></div>
+<!--    모달창 만들기-->
+    <article class="modal">
+        <img src="images/modal.png" alt="">
+        <img src="images/cat2.png" alt="">
+        <img class="close_image" src="images/free-icon-cancel-button-83972.png">
+        <h3>Thank you!</h3>
+        <p class="normal_font">Lorem lpsum is simply dummy text of the printing industry.</p>
+        <button class="orange_Btn">OK! I Love HODU</button>
+    </article>
+<!--    모달창 완료-->
+    <div id="heartContainer"></div> <!--하트가 들어갈 컨테이너-->
     <footer>
         <img src="images/Logo-fin.png" alt=" ">
         <nav>
             <li ><a href="#"><div><img src="images/blog.png" alt=""></div></a></li>
             <li ><a href="#"><div><img src="images/instagram.png" alt=""></div></a></li>
             <li ><a href="#"><div><img src="images/facebook.png" alt=""></div></a></li>
-            <li><a href="#"><div><img src="images/youtube.png" alt=""></div></li>
+            <li><a href="#"><div><img src="images/youtube.png" alt=""></div></a></li>
         </nav>
     </footer>
 </section>
-<script type="text/javascript" src="js/scrolling.js"></script>
 <!--세번째 페이지 끝-->
+<script type="text/javascript" src="js/scrolling.js"></script>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/heart.js"></script>
 </body>
 </html>

@@ -204,7 +204,6 @@
     }
 
     .subscribe_box{
-        margin-top:80px;
         border-radius: 30px;
         background-color: #263140;
         padding: 51px 58px 51px 58px;
@@ -212,6 +211,7 @@
         align-items: center;
         justify-content: space-between;/**/
         position: relative;
+        top: 100px;
     }
 
 
@@ -244,7 +244,7 @@
     }
 
     .subscribe_input img{
-        margin-left:28px
+        margin-left:28px;
     }
 
     #email{
@@ -260,14 +260,24 @@
         margin: 5px 6px 5px 0px;
     }
 
-    .cat{
-        width:1920px;
-        height:340px;
-        background-color: #F2E9D8;
+    /*.cat{*/
+    /*    width:1920px;*/
+    /*    height:340px;*/
+    /*    background-color: #F2E9D8;*/
+    /*    z-index: -1;*/
+    /*    margin-left:-320px;*/
+    /*    position: relative;*/
+    /*    bottom: 100px;*/
+    /*}*/
+
+    .cat img{
+        width: 1920px;
+        height: 340px;
+        background-color:#F2E9D8 ;
         z-index: -1;
-        margin-left:-320px;
-        position: relative;
-        bottom: 100px;
+        margin-left: -320px;
+        background-size: cover;
+        object-fit: cover;
     }
 
     footer{
@@ -287,5 +297,54 @@
 
 }
 
+.modal{
+    display:none;
+}
 
+.modal img:first-child{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.25);
+}
 
+.modal img:nth-child(2){
+    position: fixed;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close_image{
+    position: fixed;
+    top:30%;
+    right:35%;
+}
+
+.modal h3{
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size:36px;
+    text-align: center;
+    line-height: 45px;
+    color:#D97652;
+}
+
+.modal p{
+    position: fixed;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal .orange_Btn{
+    position: fixed;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
