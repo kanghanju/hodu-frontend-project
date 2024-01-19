@@ -8,14 +8,13 @@
 - 프로젝트 이름: HODU🐈
 - 프로젝트 개발 기간: 2024.01.16 ~ 2024.01.23
 
-<br>
+<br><br>
 
 <h3>📕프로젝트 특징</h3>
 
 1. [Kakao 지도 API](https://apis.map.kakao.com/) 활용
 2. [더미 이미지 생성 API](https://picsum.photos/)를 이용한 무한 이미지 스크롤
 3. 라이브러리를 사용하지 않고 HTML, CSS, JavaScript 사용
-
 
 <br>
 
