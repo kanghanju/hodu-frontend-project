@@ -4,7 +4,7 @@
     background-color: red;
     position: absolute;
     animation: moveUp 2s linear forwards;
-
+    z-index: 10;
 }
 
 .heart:before,
