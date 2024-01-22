@@ -5,7 +5,7 @@ document.querySelector('.modal button').addEventListener('click', () => {
 
     // 현재 보고 있는 뷰포트의 상대적 위치에 하트를 배치
     heart.style.top = (window.scrollY + window.innerHeight / 2) + 'px';
-    heart.style.left = (50 + (Math.random() - 0.5) * 100) + '%'; // 가로축 중앙에서 ±15% 범위 내에서 랜덤
+    heart.style.left = (30+(Math.random() - 0.5) * 100) + '%'; // 가로축 중앙에서 ±15% 범위 내에서 랜덤
 
     document.getElementById('heartContainer').appendChild(heart);
 
