@@ -1,7 +1,8 @@
 
 const subscribeBtn = document.querySelector(".subscribe_input .orange_Btn");
 let modal = document.querySelector(".modal");
-subscribeBtn.addEventListener("click",(event)=>{
+let form = document.querySelector(".emailForm");
+form.addEventListener("submit",(event)=>{
     event.preventDefault();
     modal.style.display = "block";
 })
