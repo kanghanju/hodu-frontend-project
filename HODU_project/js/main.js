@@ -1,4 +1,4 @@
-const downloadButtons = document.querySelectorAll(".download_image");
+const downloadButtons = document.querySelectorAll(".btn-download");
 const goUpButton = document.querySelector(".vector");
 downloadButtons.forEach(button=>{
     button.addEventListener('click',function () {
