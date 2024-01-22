@@ -52,7 +52,7 @@ nav a:hover,.orange_Btn:hover{
     line-height: 20px;
     font-size: 16px;
     font-weight: 400;
-    color: black;
+    color:black;
 }
 
 nav li button {
@@ -61,7 +61,7 @@ nav li button {
 
 .orange_Btn {
     color: #FFFFFF;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 20px;
     font-weight: 700;
     font-size: 16px;
@@ -83,7 +83,7 @@ nav li button {
 }
 
 .firstPage_main article {
-    padding-right: 170px;
+    margin-right: 170px;
 }
 
 .big_font {
@@ -101,7 +101,7 @@ nav li button {
 }
 
 .secondPage_firstDiv {
-    padding-top: 80px;
+    margin-top: 80px;
     display: flex;
     /*justify-content:space-between;*/
 }
@@ -125,11 +125,11 @@ nav li button {
 }
 
 .secondPage_firstDiv p {
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .secondPage_secondDiv {
-    padding-top: 120px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +180,7 @@ nav li button {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
+    /*text-align: center;*/
     padding-bottom: 28px;
 }
 
@@ -253,7 +253,7 @@ nav li button {
 
 #email {
     border: none;
-    padding: 10px 0px 10px 0px;
+    /*padding: 10px 0px 10px 0px;*/
     margin-left: 16px;
     /*box-sizing: border-box;*/
     width: 321px;
@@ -270,36 +270,31 @@ nav li button {
     z-index: -1;
     background-size: cover;
     object-fit: cover;
-    margin-left: -320px;
+    /*margin-left: -320px;*/
+    position: relative;
 }
 
 footer {
     display: flex;
-    margin: 45px 45px;
+    margin: 45px 0px;
+    align-items: center;
 }
 
-footer nav ul {
-    display: flex;
+footer img{
+    width:226px;
+    height:70px;
 }
-
-
-
-/*footer nav div {*/
-/*    border-radius: 50%;*/
-/*    background-color: #F29D52;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    padding: 9px 9px 9px 9px;*/
-/*}*/
 
 footer li a{
     padding: 9px 9px 9px 9px;
     border-radius: 50%;
     background-color: #F29D52;
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+footer li a img{
+   width: 24px;
+    height: 24px;
 }
 
 footer nav ul li a:hover{
@@ -324,59 +319,62 @@ footer nav li:nth-child(4) a:hover{
 
 .modal {
     display: none;
-}
-
-.modal img:first-child {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal img:first-child {
     border-radius: 30px;
     box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.25);
 }
 
 .modal img:nth-child(2) {
-    position: fixed;
-    top: 41%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60px;
+    left: 245px;
 }
 
 .close_image {
-    position: fixed;
-    top: 30%;
-    right: 35%;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
 .modal h3 {
-    position: fixed;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 196px;
+    left:215px;
     font-weight: 700;
     font-size: 36px;
     text-align: center;
     line-height: 45px;
     color: #D97652;
-    animation: bounce .3s ease infinite alternate;
 }
 
 .modal p {
-    position: fixed;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top:254px;
+    left:108px;
 }
 
 .modal .orange_Btn {
-    position: fixed;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top:310px;
+    left:205px;
+}
+
+.vectorBox{
+    margin-left: -320px;
+    margin-right: -320px;
+    position: relative;
 }
 
 .vector{
-
+    position: absolute;
+    right:24px;
+    bottom:19px;
     opacity: 0.8;
     padding: 15px 15px 15px 15px;
     border-radius: 50%;

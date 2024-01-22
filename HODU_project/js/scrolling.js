@@ -41,12 +41,12 @@ container.addEventListener('scroll', function(e){
     if(timer)return; //timer에 값이 있다면 return;
 
     timer = setTimeout(()=>{
-        if(container.scrollTop + container.clientHeight >= container.scrollHeight-10){
+        if(container.scrollTop + container.clientHeight >= container.scrollHeight-20){
             fetchImages(pageNum += 1);
             console.log("scrolling!");
         }
         timer=null;
-    },1000);
+    },300);
 });
 
 
