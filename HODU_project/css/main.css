@@ -6,37 +6,33 @@
 }
 
 body {
-    font-family: 'Pretendard-Regular';
     background-color: white;
+    font-family: 'Pretendard-Regular';
 }
 
-.firstPage,.secondPage,.thirdPage{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 320px;
-    padding-right: 320px;
+.section-01,.section-02,.section-03{
     max-width: 1280px;
+    margin:0 auto;
+    padding:0 320px;
 }
 
-.firstPage{
+.section-01{
     background-color: #F2E9D8;
 }
 
 header {
     display: flex;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding:31px 0;
 }
 
 header img {
     height: 40px;
 }
-
 nav ul {
-    margin-left: 756px;
     display: flex;
-    gap: 30px;
     align-items: center;
+    margin-left: 756px;
+    gap: 30px;
     list-style: none;
 }
 
@@ -44,117 +40,117 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover,.orange_Btn:hover{
+nav a:hover, .btn-orange:hover{
     color:olivedrab;
 }
 
-.normal_font {
+.normal-font {
     line-height: 20px;
     font-size: 16px;
     font-weight: 400;
-    color: black;
+    color:black;
 }
 
 nav li button {
     margin-left: 19px;
 }
 
-.orange_Btn {
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 20px;
-    font-weight: 700;
-    font-size: 16px;
+.btn-orange {
     padding: 15px 31px 15px 31px;
+    line-height: 20px;
+    border: none;
     border-radius: 40px;
     background-color: #D97652;
-    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
-.firstPage_main {
+.section-01-main {
     display: flex;
     align-items: center;
 }
 
-.firstPage_main img {
-    margin-top: 32px;
+.section-01-main img {
     width: 415px;
     height: 766px;
+    margin-top: 32px;
 }
 
-.firstPage_main article {
-    padding-right: 170px;
+.section-01-main article {
+    margin-right: 170px;
 }
 
-.big_font {
+.big-font {
+    line-height: 60px;
     font-weight: 700;
     font-size: 48px;
-    line-height: 60px;
 }
 
-.firstPage_main h1 {
+.section-01-main h1 {
     margin-bottom: 40px;
 }
 
-.firstPage_main button {
+.section-01-main button {
     margin-top: 40px;
 }
+/*첫번째 섹션 끝*/
 
-.secondPage_firstDiv {
-    padding-top: 80px;
+/*두번째 섹션 시작*/
+.section-02-intro {
     display: flex;
-    /*justify-content:space-between;*/
+    margin-top: 80px;
 }
 
-.secondPage_firstDiv img {
+.section-02-intro img {
     width: 660px;
     height: 390px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.25);
 }
 
-.secondPage_firstDiv div {
+.section-02-intro-text {
     padding-left: 110px;
     padding-top: 92px;
 }
 
-.secondPage_firstDiv h3 {
+.section-02-intro-text h3 {
+    line-height: 45px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 45px;
 }
 
-.secondPage_firstDiv p {
-    padding-top: 30px;
+.section-02-intro-text p {
+    margin-top: 30px;
 }
 
-.secondPage_secondDiv {
-    padding-top: 120px;
+.section-02-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 120px;
+    text-align: center;
 }
 
-.secondPage_secondDiv .big_font, .normal_font span {
-    color: #D97652
+.section-02-body .big-font, .normal-font span {
+    color: #d97652
 }
 
-.secondPage_secondDiv p {
+.section-02-body p {
     padding-top: 40px;
 }
 
 .container {
     display: grid;
+    overflow-y: scroll;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     row-gap: 72px;
     column-gap: 72px;
     padding-top:44px;
-    /*padding-bottom: 100px;*/
     margin-top: 44px;
     margin-bottom: 100px;
-    overflow-y: scroll;
-    height: 1000px;
+    height:1000px;
 }
 
 .container img {
@@ -163,223 +159,220 @@ nav li button {
     height: 378px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.25);
-    overflow: hidden;
 }
 
 .container img:hover{
     transform:scale(1.1);
 }
 
-.event_Btn {
+.show-more-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.event_Btn p {
+.show-more-box p {
+    padding-bottom: 28px;
+    line-height: 30px;
     font-weight: 700;
     font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    padding-bottom: 28px;
 }
 
-.event_Btn button {
+.show-more-box button {
     padding: 15px 29px 15px 29px;
-    margin-bottom: 80px;
+    margin-bottom:80px;
 }
+/*두번째 섹션 끝*/
 
-.thirdPage_firstDiv {
+/*세번째 섹션 시작*/
+.section-03-intro {
     padding-top: 68px;
 }
 
-.thirdPage_firstDiv > p {
+.section-03-intro > p {
+    padding-bottom: 20px;
+    line-height: 45px;
     font-weight: 700;
     font-size: 36px;
-    line-height: 45px;
-    padding-bottom: 20px;
 }
 
-.thirdPage_firstDiv p:nth-child(2) {
+.section-03-intro p:nth-child(2) {
     padding-bottom: 48px;
+    line-height: 20px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 20px;
 }
 
-.subscribe_box {
-    border-radius: 30px;
-    background-color: #263140;
-    padding: 51px 58px 51px 58px;
+.subscribe-box {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between; /**/
     position: relative;
     top: 100px;
+    padding: 51px 58px 51px 58px;
+    border-radius: 30px;
+    background-color: #263140;
 }
 
-
-.subscribe_text h3 {
+.subscribe-text h3 {
     font-weight: 700;
     font-size: 36px;
     line-height: 45px;
     color: white;
 }
 
-.subscribe_text div {
+.subscribe-text div {
     padding-top: 18px;
+    line-height: 18px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
     color: white;
 }
 
 
-.subscribe_input {
-    border-radius: 60px;
-    background-color: white;
-    color: #767676;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+.subscribe-input {
     display: flex;
     align-items: center;
     vertical-align: center;
+    border-radius: 60px;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: white;
+    color: #767676;
 }
 
-.subscribe_input img {
+.subscribe-input img {
     margin-left: 28px;
 }
 
 #email {
     border: none;
-    padding: 10px 0px 10px 0px;
     margin-left: 16px;
-    /*box-sizing: border-box;*/
     width: 321px;
 }
 
-.subscribe_input .orange_Btn {
+.subscribe-input .btn-orange {
     padding: 15px 29px 15px 29px;
-    margin: 5px 6px 5px 0px;
+    margin: 5px 6px 5px 0;
+}
+
+.vector-box{
+    position: relative;
+    margin-left: -320px;
+    margin-right: -320px;
 }
 
 .cat{
+    position: relative;
     width:1920px;
     height:340px ;
     z-index: -1;
-    background-size: cover;
     object-fit: cover;
-    margin-left: -320px;
+    background-size: cover;
 }
 
-footer {
-    display: flex;
-    margin: 45px 45px;
-}
-
-footer nav ul {
-    display: flex;
-}
-
-
-
-/*footer nav div {*/
-/*    border-radius: 50%;*/
-/*    background-color: #F29D52;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    padding: 9px 9px 9px 9px;*/
-/*}*/
-
-footer li a{
-    padding: 9px 9px 9px 9px;
+.vector{
+    position: absolute;
+    right:24px;
+    bottom:19px;
+    padding: 15px 15px 15px 15px;
+    opacity: 0.8;
     border-radius: 50%;
-    background-color: #F29D52;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border:1px solid #C4C4C4;
 }
 
-footer nav ul li a:hover{
-    transform:translate(0,-10%);
-}
-
-footer nav li:nth-child(1) a:hover{
-    background-color:#2DB400;
-}
-
-footer nav li:nth-child(2) a:hover{
-    background-color: rgb(129,52,175);
-}
-
-footer nav  li:nth-child(3) a:hover{
-    background-color:#3B5998;
-}
-
-footer nav li:nth-child(4) a:hover{
-    background-color:#C4302B;
-}
-
+/*모달창 만들기*/
 .modal {
     display: none;
-}
-
-.modal img:first-child {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal img:first-child {
     border-radius: 30px;
-    box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.25);
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.25);
 }
 
 .modal img:nth-child(2) {
-    position: fixed;
-    top: 41%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60px;
+    left: 245px;
 }
 
-.close_image {
-    position: fixed;
-    top: 30%;
-    right: 35%;
+.close-image {
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
 .modal h3 {
-    position: fixed;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 196px;
+    left:215px;
+    line-height: 45px;
     font-weight: 700;
     font-size: 36px;
-    text-align: center;
-    line-height: 45px;
     color: #D97652;
-    animation: bounce .3s ease infinite alternate;
+    text-align: center;
 }
 
 .modal p {
-    position: fixed;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top:254px;
+    left:108px;
 }
 
-.modal .orange_Btn {
-    position: fixed;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.modal .btn-orange {
+    position: absolute;
+    top:310px;
+    left:205px;
+}
+/*모달창 완료*/
+
+footer {
+    display: flex;
+    align-items: center;
+    margin: 45px 0;
 }
 
-.vector{
+footer img{
+    width:226px;
+    height:70px;
+}
 
-    opacity: 0.8;
-    padding: 15px 15px 15px 15px;
+footer li a{
+    display: flex;
+    padding: 9px 9px 9px 9px;
     border-radius: 50%;
-    border:1px solid #C4C4C4;
+    background-color: #f29D52;
 }
+
+footer a img{
+   width: 24px;
+    height: 24px;
+}
+
+footer a:hover{
+    transform:translate(0,-10%);
+}
+
+footer li:nth-child(1) a:hover{
+    background-color:#2db400;
+}
+
+footer li:nth-child(2) a:hover{
+    background-color: rgb(129,52,175);
+}
+
+footer li:nth-child(3) a:hover{
+    background-color:#3b5998;
+}
+
+footer li:nth-child(4) a:hover{
+    background-color:#c4302b;
+}
+/*세번째 섹션 끝*/
 

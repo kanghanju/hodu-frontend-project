@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,39 +11,41 @@
     <link rel="stylesheet" href="css/heart.css">
 </head>
 <body>
-<section class="firstPage">
+<!--첫번째 섹션 시작-->
+<section class="section-01">
     <header>
-        <img src="media/image/Logo-fin.png" alt=" ">
+        <img src="media/image/Logo-fin.png" alt="HODU">
         <nav>
             <ul>
-                <li ><a href="main.html" class="normal_font">Home</a></li>
-                <li ><a href="#" class="normal_font">About</a></li>
-                <li ><a href="#" class="normal_font">Support</a></li>
-                <li><button class="orange_Btn download_image">Download</button></li>
+                <li ><a href="main.html" class="normal-font">Home</a></li>
+                <li ><a href="#" class="normal-font">About</a></li>
+                <li ><a href="#" class="normal-font">Support</a></li>
+                <li><button class="btn-orange btn-download">Download</button></li>
             </ul>
         </nav>
     </header>
-
-    <!--    첫번째 페이지 메인 화면 입니다 -->
-    <div class="firstPage_main">
+    <!--첫번째 섹션 메인 화면 시작-->
+    <div class="section-01-main">
         <article>
-            <h1 class="big_font">Lorem lpsum is simply<br>
+            <h1 class="big-font">Lorem lpsum is simply<br>
                 dummy text of the printing and</h1>
             <p class="normal_font">Lorem lpsum is simply dummy text of the printing and<br>
                 typesetting industry.</p>
             <p class="normal_font">Lorem lpsum has been the industry's standard dummy text<br>
                 ever since the 1500s,when an unknown</p>
-            <button class="orange_Btn download_image">Download</button>
+            <button class="btn-orange btn-download">Download</button>
         </article>
         <img src="media/image/img_cat_png.png" alt="">
     </div>
-    <!--    첫번째 페이지 메인 화면 끝-->
+    <!--첫번째 섹션 메인 화면 끝-->
 </section>
-<!--두번째 페이지 시작-->
-<section class="secondPage">
-    <div class="secondPage_firstDiv">
+<!--첫번째 섹션 끝-->
+
+<!--두번째 섹션 시작-->
+<section class="section-02">
+    <div class="section-02-intro">
         <img src="media/image/img_4.png" alt=" ">
-        <div>
+        <div class="section-02-intro-text">
             <h3>Lorem lpsum is simply<br>
                 dummy text of the printing<br>
                 and dummy text</h3>
@@ -51,9 +53,9 @@
                 industry.</p>
         </div>
     </div>
-    <div class="secondPage_secondDiv">
-        <h1 class="big_font">dummy text of the printing and dummy</h1>
-        <p class="normal_font">Lorem lpsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+    <div class="section-02-body">
+        <h1 class="big-font">dummy text of the printing and dummy</h1>
+        <p class="normal-font">Lorem lpsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
             Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
     </div>
     <div class="container">
@@ -64,75 +66,78 @@
         <img src="media/image/img_2%20(1).png" alt="">
         <img src="media/image/img_3%20(1).png" alt="">
     </div>
-    <div class="event_Btn">
+    <div class="show-more-box">
         <p>Continue exploring HODU</p>
-        <button class="orange_Btn">Show more</button>
+        <button class="btn-orange">Show more</button>
     </div>
     <hr/>
-
 </section>
-<!--두번째 페이지 끝-->
-<!--세번째 페이지 시작-->
-<section class="thirdPage">
-    <div class="thirdPage_firstDiv">
+<!--두번째 섹션 끝-->
+
+<!--세번째 섹션 시작-->
+<section class="section-03">
+    <div class="section-03-intro">
         <p>Where you'll be</p>
         <p>330,Cheomdan-ro,Jeju-si,Jeju-do,Republic of Korea</p>
     </div>
 
     <!-- 지도를 표시할 div 입니다 -->
-    <div id="map" style="width:100%;height:350px;z-index: -1"></div>
-<!--        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	eb5009ad4433a76b8e9a30403a72d29e"></script>-->
-<!--        <script type="text/javascript" src="js/kakaoMap.js"></script>-->
+    <div id="map" style="width:100%;height:520px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	eb5009ad4433a76b8e9a30403a72d29e"></script>
+    <script type="text/javascript" src="js/kakaoMap.js"></script>
 
-    <div class="subscribe_box">
-        <div class="subscribe_text">
+    <div class="subscribe-box">
+        <div class="subscribe-text">
             <h3>Subscribe to our Blog post</h3>
             <div>
                 Lorem lpsum is simply dummy text of the printing and typesetting industry.<br>
                 Lorem lpsum has been the industry's standard dummy text
             </div>
         </div>
-        <div class="subscribe_input">
+        <div class="subscribe-input">
             <img src="media/image/mail.png" alt="">
-            <form class="emailForm">
+            <form class="email-form">
                 <label for="email"></label>
                 <input id="email" type="email" placeholder="Enter your email address"  required>
-                <button class="orange_Btn">Subscribe</button>
+                <button class="btn-orange">Subscribe</button>
             </form>
         </div>
     </div>
-    <div class="vectorBox">
+
+    <div class="vector-box">
         <img class="cat" src="media/image/img_5.png" alt="">
-<!--        <button class="vector"><img src="media/image/Vector.png" alt=""></button>-->
+        <button class="vector"><img src="media/image/Vector.png" alt=""></button>
     </div>
 
-<!--    모달창 만들기-->
+    <!--모달창 만들기-->
     <article class="modal">
-        <img src="media/image/modal.png" alt="">
+        <img src="media/image/modal.png" alt="모달창">
         <img src="media/image/cat2.png" alt="">
-        <img class="close_image" src="media/image/free-icon-cancel-button-83972.png" alt="">
+        <img class="close-image" src="media/image/free-icon-cancel-button-83972.png" alt="닫기">
         <h3>Thank you!</h3>
-        <p class="normal_font">Lorem lpsum is simply dummy text of the printing industry.</p>
-        <button class="orange_Btn">OK! I Love HODU</button>
+        <p class="normal-font">Lorem lpsum is simply dummy text of the printing industry.</p>
+        <button class="btn-orange">OK! I Love HODU</button>
     </article>
-<!--    모달창 완료-->
-    <div id="heartContainer"></div> <!--하트가 들어갈 컨테이너-->
+    <!--모달창 완료-->
+
+    <!--하트가 들어갈 컨테이너-->
+    <div id="heartContainer"></div>
+
     <footer>
-        <img src="media/image/Logo-fin.png" alt=" ">
+        <img src="media/image/Logo-fin.png" alt="HODU">
         <nav>
             <ul>
-                <li ><a href="https://kimiscat.tistory.com/"><img src="media/image/blog.png" alt=""></a></li>
-                <li ><a href="https://www.instagram.com/explore/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/?hl=ko"><img src="media/image/instagram.png" alt=""></a></li>
-                <li ><a href="#"><img src="media/image/facebook.png" alt=""></a></li><!--페이스북 아이디가 없어서 접근불가-->
-                <li><a href="https://www.youtube.com/shorts/1t7Adam0-y0"><img src="media/image/youtube.png" alt=""></a></li>
+                <li ><a href="https://kimiscat.tistory.com/"><img src="media/image/blog.png" alt="블로그"></a></li>
+                <li ><a href="https://www.instagram.com/explore/tags/%EA%B3%A0%EC%96%91%EC%9D%B4/?hl=ko"><img src="media/image/instagram.png" alt="인스타그램"></a></li>
+                <li ><a href="#"><img src="media/image/facebook.png" alt="페이스북"></a></li><!--페이스북 아이디가 없어서 접근불가-->
+                <li><a href="https://www.youtube.com/shorts/1t7Adam0-y0"><img src="media/image/youtube.png" alt="유튜브"></a></li>
             </ul>
         </nav>
     </footer>
-
 </section>
+<!--세번째 섹션 끝-->
 
-<!--세번째 페이지 끝-->
-<script type="text/javascript" src="js/download.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/scrolling.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/heart.js"></script>

@@ -1,11 +1,11 @@
 const container = document.querySelector(".container"); //그리드 container
-const showMoreBtn = document.querySelector(".event_Btn .orange_Btn");
+const showMoreBtn = document.querySelector(".show-more-box .btn-orange");
 let pageNum = 1;
 
 async function fetchImages(pageNum){//이미지를 가져오는 함수
 
     try{
-        console.log("fetchImages!");
+        // console.log("fetchImages!");
         const response = await fetch("https://picsum.photos/v2/list?page="+pageNum+"&limit=3");
         if(!response.ok){//통신실패시 Error객체 던짐
             throw new Error("네트워크 응답에 문제가 있습니다.")
@@ -41,12 +41,12 @@ container.addEventListener('scroll', function(e){
     if(timer)return; //timer에 값이 있다면 return;
 
     timer = setTimeout(()=>{
-        if(container.scrollTop + container.clientHeight >= container.scrollHeight-10){
+        if(container.scrollTop + container.clientHeight >= container.scrollHeight-20){
             fetchImages(pageNum += 1);
-            console.log("scrolling!");
+            // console.log("scrolling!");
         }
         timer=null;
-    },1000);
+    },300);
 });
 
 
