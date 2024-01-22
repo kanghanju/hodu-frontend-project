@@ -142,15 +142,16 @@ nav li button {
 
 .container {
     display: grid;
+    overflow-x:hidden;
     overflow-y: scroll;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 72px;
+    height:900px;
+    grid-template-columns: 378px 378px 378px;
+    grid-template-rows: 378px 378px;
+    row-gap:72px;
     column-gap: 72px;
     padding-top:44px;
-    margin-top: 44px;
+    margin-right: -36px;
     margin-bottom: 100px;
-    height:1000px;
 }
 
 .container img {
