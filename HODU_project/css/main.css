@@ -5,7 +5,6 @@
     font-style: normal;
 }
 
-
 body {
     font-family: 'Pretendard-Regular';
     background-color: white;
@@ -17,7 +16,6 @@ body {
     padding-left: 320px;
     padding-right: 320px;
     max-width: 1280px;
-    /*width: 100%;*/
 }
 
 .firstPage{
@@ -38,13 +36,16 @@ nav ul {
     margin-left: 756px;
     display: flex;
     gap: 30px;
-    display: flex;
     align-items: center;
     list-style: none;
 }
 
 nav a {
     text-decoration: none;
+}
+
+nav a:hover,.orange_Btn:hover{
+    color:olivedrab;
 }
 
 .normal_font {
@@ -73,7 +74,6 @@ nav li button {
 .firstPage_main {
     display: flex;
     align-items: center;
-    /*justify-content: space-between;*/
 }
 
 .firstPage_main img {
@@ -83,8 +83,7 @@ nav li button {
 }
 
 .firstPage_main article {
-    /*padding-top:98px;*/
-    padding-right: 170px; /*고양이 사진 옆으로 옮김, justify-content랑 비교해보기*/
+    padding-right: 170px;
 }
 
 .big_font {
@@ -94,7 +93,7 @@ nav li button {
 }
 
 .firstPage_main h1 {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .firstPage_main button {
@@ -150,21 +149,26 @@ nav li button {
     grid-template-rows: repeat(2, 1fr);
     row-gap: 72px;
     column-gap: 72px;
-    /*padding-top:88px;*/
+    padding-top:44px;
     /*padding-bottom: 100px;*/
-    margin-top: 88px;
+    margin-top: 44px;
     margin-bottom: 100px;
     overflow-y: scroll;
     height: 1000px;
 }
 
 .container img {
+    position: relative;
     width: 378px;
     height: 378px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.25);
+    overflow: hidden;
 }
 
+.container img:hover{
+    transform:scale(1.1);
+}
 
 .event_Btn {
     display: flex;
@@ -279,15 +283,44 @@ footer nav ul {
 }
 
 
-footer nav div {
+
+/*footer nav div {*/
+/*    border-radius: 50%;*/
+/*    background-color: #F29D52;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 9px 9px 9px 9px;*/
+/*}*/
+
+footer li a{
+    padding: 9px 9px 9px 9px;
     border-radius: 50%;
     background-color: #F29D52;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 9px 9px 9px 9px;
 }
 
+footer nav ul li a:hover{
+    transform:translate(0,-10%);
+}
+
+footer nav li:nth-child(1) a:hover{
+    background-color:#2DB400;
+}
+
+footer nav li:nth-child(2) a:hover{
+    background-color: rgb(129,52,175);
+}
+
+footer nav  li:nth-child(3) a:hover{
+    background-color:#3B5998;
+}
+
+footer nav li:nth-child(4) a:hover{
+    background-color:#C4302B;
+}
 
 .modal {
     display: none;
@@ -325,6 +358,7 @@ footer nav div {
     text-align: center;
     line-height: 45px;
     color: #D97652;
+    animation: bounce .3s ease infinite alternate;
 }
 
 .modal p {
