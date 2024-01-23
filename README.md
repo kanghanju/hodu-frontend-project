@@ -5,7 +5,7 @@
 <br>
 
 <h3>💻프로젝트 개요</h3>
-- 프로젝트 이름: HODU🐈
+- 프로젝트 이름: HODU🐈<br>
 - 프로젝트 개발 기간: 2024.01.16 ~ 2024.01.23
 
 <br><br>
@@ -14,7 +14,8 @@
 
 1. [Kakao 지도 API](https://apis.map.kakao.com/) 활용
 2. [더미 이미지 생성 API](https://picsum.photos/)를 이용한 무한 이미지 스크롤
-3. 라이브러리를 사용하지 않고 HTML, CSS, JavaScript 사용
+3. [행정안전부 주소 영문변환 API](https://www.kraddress.com/open-api)를 활용해 영문 도로명 주소로 변환
+4. 라이브러리를 사용하지 않고 HTML, CSS, JavaScript 사용. 단 Kakao 지도 API 라이브러리는 사용
 
 <br>
 
@@ -23,8 +24,13 @@
 
 <br>
 
-![호두 메인페이지](https://github.com/kanghanju/hodu-frontend-project/assets/66769475/a5022f5c-2df9-479c-9ee0-6f02285df9ce)
-![호두 모달페이지](https://github.com/kanghanju/hodu-frontend-project/assets/66769475/33826358-a117-4db1-ba49-bcba41716d4a)
+<h3>🖥️웹 페이지(https://kanghanju.github.io/HODU_project/main.html)</h3>
+<br>
+<img src="https://github.com/kanghanju/kanghanju.github.io/assets/66769475/e70f618c-b144-4a98-b54d-abce08431846" height="500" width="300" alt="호두 메인 페이지 제작">
+
+<img src="https://github.com/kanghanju/kanghanju.github.io/assets/66769475/497b72cc-1477-4286-b3bb-acda69592588" height="500" width="300" alt="호두 메인 페이지2 제작">
+<br>
+<img src="https://github.com/kanghanju/kanghanju.github.io/assets/66769475/dbc3cbd1-e030-4f0e-9003-9597b363a89e" width="300" alt="호두 모달 페이지 제작">
 
 
 
