@@ -45,10 +45,10 @@ function callback(result, status) {
             .then((data) => address = (data.results.juso[0].roadAddr))
             .then((data) => where.innerHTML = address)
             .catch((error) => {
-                where.innerHTML="응답중...."
+                where.innerHTML="waiting...."
                 // 데이터 요청이 실패하거나 응답이 없는 경우, 5초 후에 메시지 업데이트
                 setTimeout(() => {
-                    where.innerHTML = "도로명주소로 변환할 수 없는 장소입니다";
+                    where.innerHTML = "It's a place that can't be converted into a road name address";
                 }, 3000);
             });
 }}
